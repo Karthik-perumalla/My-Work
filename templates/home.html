@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form method="POST" action="/">
+        <label for="Account_length">Account Length:</label>
+        <input type="number" id="Account_length" name="Account_length" required><br>
+
+        <label for="International_plan">International Plan (0 or 1):</label>
+        <input type="number" id="International_plan" name="International_plan" min="0" max="1" required><br>
+
+        <label for="Voice_mail_plan">Voice Mail Plan (0 or 1):</label>
+        <input type="number" id="Voice_mail_plan" name="Voice_mail_plan" min="0" max="1" required><br>
+
+        <label for="Number_vmail_messages">Number of Voicemail Messages:</label>
+        <input type="number" id="Number_vmail_messages" name="Number_vmail_messages" required><br>
+
+        <label for="Total_day_minutes">Total Day Minutes:</label>
+        <input type="number" id="Total_day_minutes" name="Total_day_minutes" required><br>
+
+        <label for="Total_day_calls">Total Day Calls:</label>
+        <input type="number" id="Total_day_calls" name="Total_day_calls" required><br>
+
+        <label for="Total_day_charge">Total Day Charge:</label>
+        <input type="number" id="Total_day_charge" name="Total_day_charge" required><br>
+
+        <label for="Total_eve_minutes">Total Evening Minutes:</label>
+        <input type="number" id="Total_eve_minutes" name="Total_eve_minutes" required><br>
+
+        <label for="Total_eve_calls">Total Evening Calls:</label>
+        <input type="number" id="Total_eve_calls" name="Total_eve_calls" required><br>
+
+        <label for="Total_eve_charge">Total Evening Charge:</label>
+        <input type="number" id="Total_eve_charge" name="Total_eve_charge" required><br>
+
+        <label for="Total_night_minutes">Total Night Minutes:</label>
+        <input type="number" id="Total_night_minutes" name="Total_night_minutes" required><br>
+
+        <label for="Total_night_calls">Total Night Calls:</label>
+        <input type="number" id="Total_night_calls" name="Total_night_calls" required><br>
+
+        <label for="Total_night_charge">Total Night Charge:</label>
+        <input type="number" id="Total_night_charge" name="Total_night_charge" required><br>
+
+        <label for="Total_intl_minutes">Total International Minutes:</label>
+        <input type="number" id="Total_intl_minutes" name="Total_intl_minutes" required><br>
+
+        <label for="Total_intl_calls">Total International Calls:</label>
+        <input type="number" id="Total_intl_calls" name="Total_intl_calls" required><br>
+
+        <label for="Total_intl_charge">Total International Charge:</label>
+        <input type="number" id="Total_intl_charge" name="Total_intl_charge" required><br>
+
+        <label for="Customer_service_calls">Customer Service Calls:</label>
+        <input type="number" id="Customer_service_calls" name="Customer_service_calls" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if ans==0 %}
+        <h2>Prediction Result: 0</h2>
+    {% else %}
+        <h2>Prediction Result: 1</h2>
+    {% endif %}
+</body>
+</html>

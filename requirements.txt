@@ -1,0 +1,7 @@
+flask
+flask-sqlalchemy
+sqlalchemy
+flask-restful
+werkzeug
+joblib
+scikit-learn
